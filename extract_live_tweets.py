@@ -20,7 +20,7 @@ class StdOutListener(StreamListener):
     def on_data(self,data):
         try:
             tweet = json.loads(data)
-            #print(tweet)
+            
             text = tweet["text"]
             date = tweet["user"]["created_at"]
             user_id = tweet["user"]["id"]
