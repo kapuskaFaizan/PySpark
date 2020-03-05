@@ -68,7 +68,7 @@ transformed = model.transform(rescaledData.select('features'))
 transformed.show(truncate=False)
 print(transformed.columns)
 
-# Result -> target field -> dense vector
+# Result 
 result = transformed.select('topicDistribution').collect()
 result_final = [ str(i) for i in result]
 
